@@ -1,0 +1,123 @@
+@import './utils/mixin';
+@import './base/fonts';
+
+body {
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.01em;
+    color: black;
+}
+
+h2 {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include for-size(mobile) {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include for-size(tablet) {
+        width: 768px;
+    }
+
+    @include for-size(desktop) {
+        width: 1200px;
+    }
+}
+
+
+
+// header
+.page-header {
+    padding: 10px 0 10px 0;
+    background-color: #cae5f7;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-menu {
+    width: 35px;
+    height: 35px;
+    fill: #0000009c;
+}
+
+.logo {
+    font-family: 'Kalam', cursive;
+    font-size: 34px;
+    font-weight: 700;
+    color: #504949e3;
+}
+
+//menu
+.menu {
+    display: none;
+}
+
+//matrix
+.section-matrix {
+    padding: 60px 0 60px 0;
+}
+
+.title {
+    position: absolute;
+
+    &.top {
+        top: -20%;
+    }
+
+    &.left-top {
+        transform: rotate(-90deg);
+        left: -25%;
+        top: -60%;
+    }
+    &.left {
+        transform: rotate(-90deg);
+        left: -131%;
+    }
+}
+
+.list-matrix {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 2);
+        height: 100%;
+        border: 1px solid black;
+    }
+}
+
+.square-name {
+    font-size: 47px;
+    font-weight: 600;
+    color: black;
+}

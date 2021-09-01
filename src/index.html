@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
 </head>
 <body>
-    <h1>Hello</h1>
+    <header class="page-header">
+        <div class="container container-header">
+            <a class="menu-btn">
+                <svg class="icon-menu">
+                    <use href="./images/sprite.svg#menu"></use>
+                </svg>
+            </a>
+    
+            <a class="link logo" href="">My Tasks</a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <p>Menu</p>
+    </div>
+
+    <main>
+        <section class="section section-matrix">
+            <div class="container">
+                <!-- <div class="box-title absolute">
+                    <h2 class="title">Не важно</h2>
+                    <h2 class="title">Важно</h2>
+                </div>
+                <div class="box-title">
+                    <h2 class="title">Срочно</h2>
+                    <h2 class="title">Не срочно</h2>
+                </div> -->
+    
+                <ul class="list list-matrix">
+                    <li class="item">
+                        <a class="link" href=""><p class="square-name">A</p></a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href=""><p class="square-name">B</p></a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href=""><p class="square-name">C</p></a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href=""><p class="square-name">D</p></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
 </body>
 </html>
