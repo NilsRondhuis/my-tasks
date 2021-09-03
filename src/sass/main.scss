@@ -82,42 +82,51 @@ h2 {
     padding: 60px 0 60px 0;
 }
 
-.title {
-    position: absolute;
-
-    &.top {
-        top: -20%;
-    }
-
-    &.left-top {
-        transform: rotate(-90deg);
-        left: -25%;
-        top: -60%;
-    }
-    &.left {
-        transform: rotate(-90deg);
-        left: -131%;
-    }
-}
-
-.list-matrix {
-    padding: 40px;
+.table {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    // border: 1px solid black;
+}
 
-    .item {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% / 2);
-        height: 100%;
-        border: 1px solid black;
+.box-overhead {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        white-space: nowrap;
+        font-size: 10px;
     }
 }
 
-.square-name {
-    font-size: 47px;
-    font-weight: 600;
-    color: black;
+.pad {
+    padding: 0 20px 0 0;
+}
+
+.box-overhead-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100px;
+
+    span {
+        white-space: nowrap;
+        display: inline-block;
+        font-size: 10px;
+        transform: rotate(-90deg);
+    }
+}
+
+.box-overhead-0 {
+    width: 30px;
+    height: 30px;
+}
+
+.a {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
 }
