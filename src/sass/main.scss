@@ -83,50 +83,71 @@ h2 {
 }
 
 .table {
-    display: flex;
-    justify-content: center;
-    // border: 1px solid black;
+    padding: 0 20px 0 0;
+
+    .tr {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.box-overhead {
-    width: 100px;
+.th-null {
+    width: 30px;
+    height: 30px;
+}
+
+.th-top {
+    width: 150px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    span {
-        white-space: nowrap;
-        font-size: 10px;
-    }
 }
 
-.pad {
-    padding: 0 20px 0 0;
-}
-
-.box-overhead-2 {
+.th-left {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
-    height: 100px;
+    height: 150px;
+}
 
-    span {
-        white-space: nowrap;
-        display: inline-block;
-        font-size: 10px;
+.caption {
+    white-space: nowrap;
+    font-size: 15px;
+
+    &.left {
         transform: rotate(-90deg);
     }
 }
 
-.box-overhead-0 {
-    width: 30px;
-    height: 30px;
-}
-
-.a {
+.td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
+
+    &.pink {
+        background-color: #FFD7D7;
+    }
+
+    &.green {
+        background-color: #D6FFD7;
+    }
+
+    &.yellow {
+        background-color: #FEFFD7;
+    }
+
+    &.gray {
+        background-color: #DCDCB6;
+    }
+
+    .link-matrix {
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+    }
 }
