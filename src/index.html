@@ -10,20 +10,27 @@
 <body>
     <header class="page-header">
         <div class="container container-header">
-            <a class="menu-btn">
+            <button class="btn menu-btn">
                 <svg class="icon-menu">
                     <use href="./images/sprite.svg#menu"></use>
                 </svg>
-            </a>
+            </button>
     
             <a class="link logo" href="">My Tasks</a>
         </div>
     </header>
 
-    <div class="backdrop js-backdrop">
-        <div class="menu js-menu">
-            <button class="close-btn">Close</button>
-        </div>
+    <div class="backdrop js-backdrop"></div>
+    <div class="menu js-menu">
+        <button class="close-btn">
+            <svg class="icon-cross">
+                <use href="./images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+
+        <ul class="list menu-list">
+            <li class="item"><a class="link menu-link" href="">Мои заметки</a></li>
+        </ul>
     </div>
 
     <main>
