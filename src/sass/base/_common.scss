@@ -1,0 +1,50 @@
+body {
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.01em;
+    color: black;
+}
+
+h2 {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 5px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include for-size(mobile) {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include for-size(tablet) {
+        width: 768px;
+    }
+
+    @include for-size(desktop) {
+        width: 1200px;
+    }
+}

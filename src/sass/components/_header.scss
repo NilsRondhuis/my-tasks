@@ -1,0 +1,30 @@
+.page-header {
+    padding: 10px 0 10px 0;
+    background-color: #cae5f7;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-menu {
+    width: 35px;
+    height: 35px;
+    fill: #0000009c;
+}
+
+.logo {
+    font-family: 'Kalam', cursive;
+    font-size: 34px;
+    font-weight: 700;
+    transition: color 150ms linear;
+    color: #504949e3;
+}
+
+.logo.is-open {
+    position: relative;
+    color: white;
+    z-index: 1;
+}

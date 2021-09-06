@@ -1,0 +1,62 @@
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 250ms linear;
+    background-color: rgba(0, 0, 0, 0.493);
+    pointer-events: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 70px 30px 0 30px;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: transform 250ms linear;
+    background-color: #221f1f;
+    z-index: 1;
+
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        background-color: gray;
+
+        .icon-cross {
+            width: 25px;
+            height: 25px;
+            fill: white;
+        }
+    }
+}
+
+.menu.is-open {
+    transform: translateX(0);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-list {
+
+    .menu-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+}
