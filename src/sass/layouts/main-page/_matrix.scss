@@ -65,9 +65,14 @@
         background-color: #DCDCB6;
     }
 
-    .link-matrix {
+    .block-text {
         font-size: 16px;
         font-weight: 700;
         color: black;
     }
+}
+
+.link-matrix {
+    display: inline-block;
+    color: black;
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сделать</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+</head>
+<body class="body-make">
+    <header class="page-header">
+        <div class="container container-header">
+            <a href="./index.html" class="link btn-back">
+                <svg class="icon-arrow-left">
+                    <use href="./images/sprite.svg#arrow-left"></use>
+                </svg>
+            </a>
+    
+            <a class="link logo" href="">My Tasks</a>
+        </div>
+    </header>
+
+    <section class="section-make">
+        <div class="container">
+            <div class="centered"><h1>Важно Срочно Сделать</h1></div>
+            <form class="form">
+                <input type="text" class="input" name="query" placeholder="Введите задачу...">
+                <div class="centered"><button class="btn-task">Поставить задачу</button></div>
+            </form>
+        </div>
+    </section>
+    <section class="section-list">
+        <ol class="list-task">
+        </ol>
+    </section>
+    
+    <script src="./js/01-make-page/01-main.js"></script>
+</body>
+</html>
