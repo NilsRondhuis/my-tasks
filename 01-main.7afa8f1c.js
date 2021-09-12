@@ -3,8 +3,8 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"x9mt":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e={dataBase:[]};exports.default=e;
 },{}],"d1MO":[function(require,module,exports) {
-"use strict";var t=e(require("../data-base/data-base"));function e(t){return t&&t.__esModule?t:{default:t}}const a={form:document.querySelector(".form"),list:document.querySelector(".list-task")},r="task-info";a.form.addEventListener("submit",l),localStorage.setItem(r,JSON.stringify(t.default.dataBase));const s=localStorage.getItem(r),n=JSON.parse(s),o=u(n);function l(e){e.preventDefault();const a=e.currentTarget.elements.query.value;t.default.dataBase.push(a),localStorage.setItem(r,JSON.stringify(t.default.dataBase));const s=localStorage.getItem(r);c(u(JSON.parse(s))),e.currentTarget.reset()}function u(t){return t.map(t=>`\n        <li class="item"><p class="content-task">${t}</p></li>\n        `)}function c(t){a.list.innerHTML=t.join("")}c(o);
+"use strict";var e=t(require("../data-base/data-base"));function t(e){return e&&e.__esModule?e:{default:e}}const r={form:document.querySelector(".form"),list:document.querySelector(".list-task")},a="make-task";r.form.addEventListener("submit",i);const s=e=>`<li class="item"><p class="content-task">${e}</p></li>`,n=JSON.parse(localStorage.getItem(a)),o=n||[],c=o.map(e=>s(e)),l=c.join("");function i(e){e.preventDefault();const t=e.currentTarget.elements.query.value;r.list.insertAdjacentHTML("beforeend",s(t));const n=JSON.parse(localStorage.getItem(a)),o=n||[];o.push(t),localStorage.setItem(a,JSON.stringify(o)),e.currentTarget.reset()}r.list.insertAdjacentHTML("afterbegin",l);
 },{"../data-base/data-base":"x9mt"}],"SoaA":[function(require,module,exports) {
 "use strict";require("../../sass/main.scss"),require("../render-list/form");
 },{"../../sass/main.scss":"clu1","../render-list/form":"d1MO"}]},{},["SoaA"], null)
-//# sourceMappingURL=/my-tasks/01-main.5c992104.js.map
+//# sourceMappingURL=/my-tasks/01-main.7afa8f1c.js.map
