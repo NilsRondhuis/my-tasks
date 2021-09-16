@@ -9,3 +9,12 @@ refs.formMakePage.addEventListener('submit', () => {
 });
 
 saveItemLocalStorage('make-task', createEl);
+
+
+// const LS = localStorage.getItem('make-task');
+// const parse = JSON.parse(LS);
+// const newArr = parse.filter(el => el !== 'dfsdf');
+// const newLS = JSON.stringify(newArr);
+// localStorage.removeItem('make-task');
+// localStorage.setItem('make-task', newLS);
+
